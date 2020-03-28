@@ -9,7 +9,7 @@ body,
     width: 100%;
     height: 100%;
     text-align: center;
-    .wrap-signup {
+    .signup-wrap {
         padding-top: 140px;
         .dj-logo {
             display: inline-block;
@@ -18,7 +18,7 @@ body,
             color: $black;
             letter-spacing: -1.5px;
         }
-        .wrap-signup-form {
+        .signup-form-wrap {
             display: block;
             width: 435px;
             margin: 0 auto;
@@ -28,18 +28,27 @@ body,
                 border: 1px solid $color-sub;
                 + .input-area {
                     margin-top: 15px;
-                    border: 1px solid #d1d1d1;
+                    border: 1px solid $grey;
+                    label {
+                        background-color: $grey;
+                    }
                 }
                 label {
-                    visibility: hidden;
-                    overflow: hidden;
-                    font-size: 0;
-                    line-height: 0;
+                    float: left;
+                    width: 70px;
+                    height: 55px;
+                    background-color: $color-sub;
+                    line-height: 55px;
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: -1px;
                 }
                 input {
-                    width: 100%;
+                    float: left;
+                    width: 363px;
                     height: 100%;
-                    padding: 0 20px;
+                    padding: 0 10px;
                     border: 0;
                     background: transparent;
                 }
@@ -49,7 +58,7 @@ body,
                     clear: both;
                 }
                 &:last-of-type {
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                 }
             }
             .btn-signup {
@@ -58,7 +67,7 @@ body,
                 margin-bottom: 10px;
                 border: none;
                 background-color: $color-main;
-                color: #fff;
+                color: $white;
                 font-size: 20px;
                 font-weight: bold;
             }

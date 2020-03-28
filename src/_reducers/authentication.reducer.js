@@ -11,13 +11,12 @@ export function authentication(state = initialState, action) {
         user: action.user
       };
     case userConstants.LOGIN_SUCCESS:
-
-      console.log("Login SUCCESS!!!");
       return {
         loggedIn: true,
         user: action.user
       };
     case userConstants.LOGIN_FAILURE:
+      alert("로그인에 실패하셨습니다.")
       return {};
     case userConstants.LOGOUT:
       return {};

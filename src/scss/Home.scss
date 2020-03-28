@@ -16,11 +16,11 @@
         }
     }
     .new-book-wrap {
-        background: #f7f7f7;
+        background: $lightgrey;
         .contents {
             min-height: 0;
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding-top: 100px;
+            padding-bottom: 100px;
             .title {
                 margin-bottom: 40px;
                 color: $black;
@@ -45,7 +45,7 @@
                         bottom: 0;
                         left: 50%;
                         transform: translateX(-50%);
-                        box-shadow: 1px 1px 3px 1px #dcdcdc;
+                        box-shadow: 1px 1px 3px 1px #eee;
                     }
                 }
                 .name {
@@ -56,7 +56,95 @@
                 .author {
                     font-size: 14px;
                     font-weight: normal;
-                    color: #666;
+                    color: $sub-text;
+                }
+            }
+        }
+    }
+    .best-book-wrap {
+        .contents {
+            min-height: 0;
+            padding-top: 100px;
+            padding-bottom: 60px;
+            text-align: center;
+            .title {
+                margin-bottom: 40px;
+                color: $black;
+                font-size: 25px;
+                font-weight: 500;
+                text-align: center;
+                i {
+                    vertical-align: top;
+                }
+            }
+            .book-list {
+                .item-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    width: 100%;
+                    .item {
+                        width: 33%;
+                        margin: auto;
+                        .img {
+                            position: relative;
+                            display: inline-block;
+                            width: 100px;
+                            margin-right: 20px;
+                            .rank {
+                                position: absolute;
+                                width: 34px;
+                                height: 34px;
+                                line-height: 30px;
+                                top: -10px;
+                                left: -10px;
+                                background: $color-sub;
+                                border-radius: 50%;
+                                text-align: center;
+                                color: $white;
+                                box-sizing: border-box;
+                            }
+                            img {
+                                width: 100%;
+                                box-shadow: 1px 1px 3px 1px #dcdcdc;
+                            }
+                        }
+                        .txt-box {
+                            display: inline-block;
+                            width: 250px;
+                            padding: 50px 0;
+                            border-bottom: 1px solid #dcdcdc;
+                            box-sizing: border-box;
+                            text-align: left;
+                            .name {
+                                padding-right: 15px;
+                                font-weight: 700;
+                                line-height: 1.33em;
+                                color: $black;
+                                max-height: 2.7em;
+                                margin-bottom: 10px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                display: block;
+                                white-space: nowrap;
+                                font-size: 15px;
+                                box-sizing: border-box;
+                            }
+                            .author {
+                                margin-bottom: 10px;
+                                color: $sub-text;
+                            }
+                            .MuiSvgIcon-root {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                        &:nth-of-type(7) .txt-box,
+                        &:nth-of-type(8) .txt-box,
+                        &:nth-of-type(9) .txt-box {
+                            border-bottom: 0;
+                        }
+                    }
                 }
             }
         }

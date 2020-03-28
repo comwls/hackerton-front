@@ -9,31 +9,6 @@
     margin: 0 auto;
     padding-top: 100px;
 }
-.wrap-title {
-    position: relative;
-    display: block;
-    margin: 20px 0 40px;
-    text-align: center;
-    .title {
-        font-size: 30px;
-        font-weight: 600;
-        &.on {
-            color: #00d39c;
-        }
-    }
-    .desc {
-        margin-top: 10px;
-        em {
-            color: $color-main;
-            vertical-align: top;
-        }
-    }
-    .tab-menu {
-        position: absolute;
-        top: 0;
-        right: 70px;
-    }
-}
 
 //정렬
 .fl-left {
@@ -87,7 +62,7 @@
                 height: 17px;
                 text-align: center;
                 background: $white;
-                border: 1px solid #dedfdf;
+                border: 1px solid $grey;
                 border-radius: 100%;
             }
         }
@@ -192,7 +167,7 @@
 
 // pagination
 .pagination-wrap {
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     .pagination {
         display: inline-block;
@@ -201,7 +176,7 @@
             width: 30px;
             height: 30px;
             margin: 0 3px;
-            line-height: 30px;
+            line-height: 26px;
             text-align: center;
             border: 1px solid #eee;
             border-radius: 3px;
@@ -215,6 +190,7 @@
                 }
             }
             a {
+                display: block;
                 font-size: 18px;
                 color: #888;
             }
@@ -222,32 +198,9 @@
     }
 }
 
-// 별점
-.star-box {
-    padding: 0 5px;
-    margin-top: 10px;
-    .star {
-        position: relative;
-        display: block;
-        width: 100px;
-        height: 20px;
-        background: url(/images/star_off.png) repeat-x;
-        &:before {
-            overflow: hidden;
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            // 별점 등급 조절 width
-            width: 90px;
-            height: 20px;
-            background: url(/images/star_on.png) repeat-x;
-        }
-    }
-}
-
 // 에러 메시지
 .error-msg {
+    display: block;
     color: red;
     text-align: right;
     padding: 7px 0;

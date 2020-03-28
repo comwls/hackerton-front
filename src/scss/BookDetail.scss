@@ -1,0 +1,163 @@
+#bookDetail {
+    width: 800px;
+    margin: auto;
+    .detail-title {
+        width: 100%;
+        padding: 8px 0;
+        margin: 60px 0 15px;
+        border-bottom: 2px solid $darkgrey;
+        font-size: 20px;
+        color: $darkgrey;
+    }
+    .book-info {
+        display: flex;
+        flex-direction: row;
+        .img-box {
+            display: table-cell;
+            width: 25%;
+            margin-right: 5%;
+            img {
+                width: 100%;
+                box-shadow: 1px 1px 5px 2px #eee;
+            }
+        }
+        .txt-box {
+            width: 82%;
+            .book-title {
+                margin: 20px 0;
+                font-size: 30px;
+                line-height: 1.4;
+                color: $black;
+            }
+            .book-sub {
+                margin-bottom: 30px;
+                font-size: 16px;
+                color: $sub-text;
+            }
+            dl {
+                margin-bottom: 10px;
+                font-size: 14px;
+                color: $black;
+                dt {
+                    float: left;
+                    font-weight: bold;
+                }
+                dd {
+                    float: left;
+                    margin-left: 10px;
+                }
+            }
+            .star-box {
+                margin: 10px 0;
+                padding: 0;
+                .review {
+                    margin-left: 10px;
+                    font-size: 13px;
+                    color: $darkgrey;
+                }
+            }
+        }
+    }
+    .desc-box {
+        .desc {
+            font-size: 13px;
+            line-height: 1.5;
+            color: $darkgrey;
+        }
+    }
+    .review-wrap {
+        .score-wrap {
+            .title {
+                margin: 30px 0 20px;
+                font-size: 20px;
+                color: $darkgrey;
+                text-align: center;
+            }
+            .star-box {
+                width: 320px;
+                margin: auto;
+                .MuiRating-root {
+                    font-size: 64px;
+                }
+            }
+            .review-add {
+                margin-top: 30px;
+                textarea {
+                    display: inline-block;
+                    width: 85%;
+                    height: 100px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #aaa;
+                }
+                button {
+                    display: inline-block;
+                    margin-left: 2%;
+                    width: 13%;
+                    height: 100px;
+                    background-color: rgba(95, 0, 128, 0.7);
+                    color: $white;
+                    border: 0;
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: $color-main;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        .review-list-wrap {
+            .list-wrap {
+                padding: 40px 0;
+                .list {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 20px 0;
+                    border-top: 1px solid $grey;
+                    .content-left {
+                        width: 15%;
+                        .star-box {
+                            margin-bottom: 10px;
+                            .MuiRating-root {
+                                font-size: 16px;
+                            }
+                        }
+                        .name {
+                            font-size: 12px;
+                            color: $black;
+                        }
+                        .date {
+                            padding-top: 10px;
+                            font-size: 12px;
+                            color: $sub-text;
+                        }
+                    }
+                    .content-right {
+                        position: relative;
+                        width: 85%;
+                        padding-bottom: 30px;
+                        p {
+                            font-size: 13px;
+                            color: $black;
+                            line-height: 1.5;
+                        }
+                        .btn-wrap {
+                            position: absolute;
+                            right: 0;
+                            bottom: -10px;
+                            button {
+                                border: 1px solid #d1d5d9;
+                                border-radius: 5px;
+                                padding: 5px 10px;
+                                background: $white;
+                                & + button {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,13 @@
 //컬러
 $color-main: #5f0080;
 $color-sub: #a073c2;
+$pink: #e96968;
+$sub-text: #999;
 $white: #fff;
 $black: #303538;
-$grey: #f7f7f7;
-$pink: #e96968;
+$lightgrey: #f7f7f7;
+$grey: #d1d5d9;
+$darkgrey: #666;
 
 //웹폰트
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
@@ -26,3 +29,4 @@ $pink: #e96968;
 @import './scss/AddList.scss';
 @import './scss/BookList.scss';
 @import './scss/SearchResult.scss';
+@import './scss/BookDetail.scss';
