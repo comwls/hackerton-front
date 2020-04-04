@@ -24,7 +24,6 @@ jobs:
 
             - name: Install Dependencies # 의존 파일 설치
               run: |
-                CI: false
                 npm install
               # env:
                 # npm ci
