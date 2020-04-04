@@ -38,8 +38,8 @@
         "sass-loader": "^8.0.0"
     },
     "scripts": {
-        "start": "react-scripts start --config ./webpack.config.js --mode development",
-        "build": "CI=false npm run build react-scripts build --config ./webpack.config.js --mode development",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
