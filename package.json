@@ -11,7 +11,7 @@
         "amcharts3": "^3.21.15",
         "ammap3": "^3.21.15",
         "amstock3": "^3.21.15",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "cross-env": "^6.0.3",
         "font-awesome": "^4.7.0",
         "history": "^4.10.1",
